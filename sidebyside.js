@@ -327,7 +327,7 @@ var ovar_2015 = new ol.layer.Tile({
 		    anchor: [10, 10],
 		    anchorXUnits: 'pixels',
 		    anchorYUnits: 'pixels',
-		    src: 'css/point.png'
+		    src: 'point.png'
 		  }))
 		});
 		
