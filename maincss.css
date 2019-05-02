@@ -1,0 +1,105 @@
+/* CSS full-screen layout - site specific elements */
+
+html { overflow: hidden; }
+body { overflow: hidden; padding: 0; margin: 0; width: 100%; height: 100%; font-family: Trebuchet MS, Trebuchet, Arial, sans-serif; background: #FFFFFF;}
+h1 { padding:7px 10px; margin:0; font-size: 1.2em; line-height:1.2em; }
+h2 { padding:7px 10px; margin:0; font-size: 1.0em; }
+h3 {	font-size: 0.9em; border-bottom: 1px solid #ccc;}
+h4 {	font-size: 0.85em;}
+h5 {	padding:7px 10px; margin:0; font-size: 1.0em;}
+label { font-size: 0.9em;}
+
+
+@media only screen and (min-width: 50em) {
+	h5 {	padding:7px 10px; margin:0; font-size: 1.0em;}
+}
+
+@media only screen and (max-width: 50em) {
+	h5 {	display: none; }
+}
+
+#header { position: absolute; top: 10px; left: 10px; right: 10px; height: 30px; overflow: hidden;  background: #fff; background-image: url('../img/wellington_banner.jpg'); 
+background-repeat:no-repeat; background-position:right top; box-shadow: 0 1px 3px #ccc; border: 1px solid #ccc; }
+
+#home { position: absolute; top: 10px; left: 10px; z-index: 5;} 
+
+#headertitle { position: absolute; top: 6px; left: 50px; right:20px; overflow: hidden; text-align:center; } 
+
+#main { position: absolute; top: 100px; left: 10px; right: 10px; bottom: 10px; overflow: auto; border: 1px solid #592F57; border-radius: 8px; box-shadow: 0 0px 0px #CCC; 
+padding: 10px 10px 10px 10px; background: #fff; z-index: 10001;}
+
+.floatright {float:right;margin-left: 22px;margin-bottom: 20px;background:#ffffff;}
+ 
+
+#map { position: absolute; top: 100px; left: 10px; right: 10px; bottom:10px; overflow: hidden; border: 1px solid #ccc; box-shadow: 0 0px 0px #CCC; background-color: #cedfe4;} 
+
+#layerSelect { position: absolute; top: 10px; left: 300px; z-index: 1;}
+
+#sidebar { position: absolute; top: 110px; left: 60px; width: 220px; font-size: 13px; border: 1px solid #592F57; border-radius: 8px; box-shadow: 0 0px 0px #CCC; 
+padding: 10px 10px 10px 10px; background: #fff; z-index: 1;}
+
+#searchSideBar { position: absolute; top: 5px; left: 10px; right: 10px; margin-bottom:5px; height: 20px;}
+#SelectLeft {     width: 44.5%; float: left; }
+#SelectRight { width: 44.5%; float: right; }
+
+#mapleft { position: absolute; left: 10px; right: 50.2%; top: 45px; bottom: 10px; border: 1px solid #ccc;}
+#mapright { position: absolute; left: 50.2%; right: 10px; top: 45px; bottom: 10px; border: 1px solid #ccc;}
+
+#scalebar {position: absolute; right: 20px; bottom: 75px; z-index: 10001; font-size: small;}
+
+#resultsSideBar {position: absolute;top: 110px;	border-radius: 5px;right: 55px;width: 150px;  font-size: 10pt; overflow: hidden; z-index: 2; background-color: white; overflow: auto;margin: 0px;padding: 10px;
+background:rgba(255,255,255,0.95);}
+
+.mslider {  width: 100%;  background: #FFFFFF;  position:absolute;  bottom: 20px;  opacity: 0.8;  z-index: 10000000;}
+
+#mapslider .slider-selection {  background: white;  padding-left: 20px;}
+
+#slider-range {width: 200px; margin:5px;}
+
+#measurementControlForm {position: absolute;right: 50px;top: 110px;z-index:100000;
+}
+
+#measurementControlOutput {display: none; position: absolute;right: 5px;	top: 158px; background-color: white;z-index:100000;font-size: 0.75em;
+	font-weight: bold;padding: 0 6px;border: 1px inset #ddd;text-align: right; opacity:0.6;	filter:alpha(opacity=60);}
+
+#measurementControlOutputReturnLink, #measurementControlOutputSpan {	display: block;}
+
+#measurementControlOutputSpan {	height: 1.7em;}
+
+#message { position: absolute; right: 200px; top: 110px; background-color: white;z-index:100000;font-size: 0.75em; 
+		font-weight: bold;padding: 0 6px;border: 1px inset #ddd;text-align: right; opacity:0.7;	filter:alpha(opacity=60);}
+
+/* OSMNames gazetteer search autocomplete css  */
+
+.ac-renderer{
+  position: absolute;
+  border: 1px solid #ccc;
+  margin-top: -1px;
+  max-width: 400px;
+  max-height: 400px; 
+  overflow: auto; 
+  font-size:.9em;
+  z-index: 2;
+}
+.ac-row {
+  white-space: nowrap;
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+  background-color: #fff;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+.ac-row .suffix {
+  font-size:.8em;
+  color:#ccc;
+  padding:.1em 0 .1em 5px;
+}
+.ac-row .type {
+  font-size:.7em;
+  color:#aaa;
+  display:block;
+  width:100%;
+}
+.ac-highlighted {font-weight: bold;}
+.ac-active {background-color: #eee;}

@@ -1,0 +1,48 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Mapas Lado a Lado</title>
+		<!-- specific css to this map -->
+		<link type="text/css" rel="stylesheet" href="maincss.css" media="screen" /> 
+		<!-- OpenLayers css -->
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.css" media="screen" /> 
+
+	</head>
+	<body>
+
+	    <div id="header">
+
+		<div id="searchSideBar">
+			<form><select id="SelectLeft" onchange="changemapleft(this.selectedIndex)"></select></form>
+			<form><select id="SelectRight" onchange="changemapright(this.selectedIndex)"></select></form>
+		</div>
+
+	    </div>
+
+	    <div id="mapleft"></div>
+	    <div id="mapright"><div id="scalebar"></div></div>
+
+		<!-- JQuery Javascript -->
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<!-- proj4 Javascript for projection information -->
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.5.0/proj4.js"></script>
+
+		<!-- EPSG:2193 - New Zealand Transverse Mercator coordinate informaiton -->
+		
+		<script src="https://epsg.io/3763.js"></script>
+		
+		<!-- OpenLayers Javascript - use ol-debug.js for debugging and ol.js for releasing when finished -->
+
+	        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/4.6.5/ol.js"></script>
+
+		<!-- Our specific Javascript for this map -->
+
+                <script type="text/javascript" src="sidebyside.js"></script> 
+
+	</body>
+</html>
