@@ -32,7 +32,7 @@ ol.proj.get('EPSG:27493').setExtent([-121588.4107, -294117.6175, 173027.1548, 27
 	var ovar_1995 = new ol.layer.Tile({
 		title: 'ORTO 1995 (CM OVAR)',
 		    source: new ol.source.TileArcGISRest({
-			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Internet/OrtosObras/MapServer',
+			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Ortos/MapServer',
 					crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:5'},
 					projection: 'EPSG:3763'
@@ -42,7 +42,7 @@ ol.proj.get('EPSG:27493').setExtent([-121588.4107, -294117.6175, 173027.1548, 27
 	var ovar_2001 = new ol.layer.Tile({
 		title: 'ORTO 2001 (CM OVAR)',
 		    source: new ol.source.TileArcGISRest({
-			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Internet/OrtosObras/MapServer',
+			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Ortos/MapServer',
 					crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:4'},
 					projection: 'EPSG:3763'
@@ -52,7 +52,7 @@ ol.proj.get('EPSG:27493').setExtent([-121588.4107, -294117.6175, 173027.1548, 27
 	var ovar_2007 = new ol.layer.Tile({
 		title: 'ORTO 2007 (CM OVAR)',
 		    source: new ol.source.TileArcGISRest({
-			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Internet/OrtosObras/MapServer',
+			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Ortos/MapServer',
 					crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:3'},
 					projection: 'EPSG:3763'
@@ -62,7 +62,7 @@ ol.proj.get('EPSG:27493').setExtent([-121588.4107, -294117.6175, 173027.1548, 27
 	var ovar_2014 = new ol.layer.Tile({
 		title: 'ORTO 2014 (CM OVAR)',
 		    source: new ol.source.TileArcGISRest({
-			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/OrtosObras/MapServer',
+			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Ortos/MapServer',
 					crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:2'}
 	      	})
@@ -86,7 +86,7 @@ var ovar_2015 = new ol.layer.Tile({
 	var ovar_carto = new ol.layer.Tile({
 		title: 'Cartografia 10k',
 		    source: new ol.source.TileArcGISRest({
-			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Internet/INTER_Cartografia/MapServer',
+			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Ortos/MapServer',
 					crossOrigin: 'anounymous'
 	      	})
 	    });
