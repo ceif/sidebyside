@@ -62,7 +62,7 @@ ol.proj.get('EPSG:27493').setExtent([-121588.4107, -294117.6175, 173027.1548, 27
 	var ovar_2014 = new ol.layer.Tile({
 		title: 'ORTO 2014 (CM OVAR)',
 		    source: new ol.source.TileArcGISRest({
-			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Internet/OrtosObras/MapServer',
+			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/OrtosObras/MapServer',
 					crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:2'}
 	      	})
