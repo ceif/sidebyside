@@ -33,7 +33,7 @@ ol.proj.get('EPSG:27493').setExtent([-121588.4107, -294117.6175, 173027.1548, 27
 		title: 'ORTO 1995 (CM OVAR)',
 		    source: new ol.source.TileArcGISRest({
 			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Ortos/MapServer',
-					crossOrigin: 'anounymous',
+					//crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:5'},
 					projection: 'EPSG:3763'
 	      	})
@@ -43,7 +43,7 @@ ol.proj.get('EPSG:27493').setExtent([-121588.4107, -294117.6175, 173027.1548, 27
 		title: 'ORTO 2001 (CM OVAR)',
 		    source: new ol.source.TileArcGISRest({
 			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Ortos/MapServer',
-					crossOrigin: 'anounymous',
+					//crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:4'},
 					projection: 'EPSG:3763'
 	      	})
@@ -53,7 +53,7 @@ ol.proj.get('EPSG:27493').setExtent([-121588.4107, -294117.6175, 173027.1548, 27
 		title: 'ORTO 2007 (CM OVAR)',
 		    source: new ol.source.TileArcGISRest({
 			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Ortos/MapServer',
-					crossOrigin: 'anounymous',
+					//crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:3'},
 					projection: 'EPSG:3763'
 	      	})
@@ -63,7 +63,7 @@ ol.proj.get('EPSG:27493').setExtent([-121588.4107, -294117.6175, 173027.1548, 27
 		title: 'ORTO 2014 (CM OVAR)',
 		    source: new ol.source.TileArcGISRest({
 			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Ortos/MapServer',
-					crossOrigin: 'anounymous',
+					//crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:2'}
 	      	})
 	    });	
@@ -86,8 +86,8 @@ var ovar_2015 = new ol.layer.Tile({
 	var ovar_carto = new ol.layer.Tile({
 		title: 'Cartografia 10k',
 		    source: new ol.source.TileArcGISRest({
-			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Ortos/MapServer',
-					crossOrigin: 'anounymous'
+			              url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Ortos/MapServer'
+					//crossOrigin: 'anounymous'
 	      	})
 	    });
 		
@@ -100,7 +100,7 @@ var ovar_2015 = new ol.layer.Tile({
 					title: 'Ovar CARTO',
 					source: new ol.source.TileArcGISRest({
 			        url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Internet/OrtosObras/MapServer',
-					crossOrigin: 'anounymous',
+					//crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:2'}
 					})
 					}),				
@@ -109,7 +109,7 @@ var ovar_2015 = new ol.layer.Tile({
 					opacity: 0.5,
 					source: new ol.source.ImageArcGISRest({
 			        url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Internet/INTER_PDM/MapServer',
-					crossOrigin: 'anounymous',
+					//crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:72','format':'png'},
 					ratio: 1
 					})
@@ -127,7 +127,7 @@ var ovar_2015 = new ol.layer.Tile({
 					title: 'Ovar CARTO',
 					source: new ol.source.TileArcGISRest({
 			        url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Internet/OrtosObras/MapServer',
-					crossOrigin: 'anounymous',
+					//crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:2'}
 					})
 					}),				
@@ -136,7 +136,7 @@ var ovar_2015 = new ol.layer.Tile({
 					opacity: 1,
 					source: new ol.source.TileArcGISRest({
 			        url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Internet/INTER_PDM/MapServer',
-					crossOrigin: 'anounymous',
+					//crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:12'}
 					})
 					})
@@ -153,7 +153,7 @@ var ovar_2015 = new ol.layer.Tile({
 					title: 'Ovar CARTO',
 					source: new ol.source.TileArcGISRest({
 			        url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Internet/OrtosObras/MapServer',
-					crossOrigin: 'anounymous',
+					//crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:2'}
 					})
 					}),				
@@ -162,7 +162,7 @@ var ovar_2015 = new ol.layer.Tile({
 					opacity: 1,
 					source: new ol.source.TileArcGISRest({
 			        url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Internet/INTER_PDM/MapServer',
-					crossOrigin: 'anounymous',
+					//crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:10'}
 					})
 					})
@@ -180,7 +180,7 @@ var ovar_2015 = new ol.layer.Tile({
 					title: 'Ovar CARTO',
 					source: new ol.source.TileArcGISRest({
 			        url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Internet/OrtosObras/MapServer',
-					crossOrigin: 'anounymous',
+					c//rossOrigin: 'anounymous',
 					params: {'LAYERS':'show:2'}
 					})
 					}),				
@@ -189,7 +189,7 @@ var ovar_2015 = new ol.layer.Tile({
 					opacity: 1,
 					source: new ol.source.TileArcGISRest({
 			        url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Internet/INTER_Obras_emCurso/MapServer',
-					crossOrigin: 'anounymous',
+					//crossOrigin: 'anounymous',
 					params: {'LAYERS':'show:1'}
 					})
 					})
