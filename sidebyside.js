@@ -180,7 +180,7 @@ var ovar_2015 = new ol.layer.Tile({
 					title: 'Ovar CARTO',
 					source: new ol.source.TileArcGISRest({
 			        url: 'http://sig.cm-ovar.pt/arcgis/rest/services/Internet/OrtosObras/MapServer',
-					c//rossOrigin: 'anounymous',
+					//rossOrigin: 'anounymous',
 					params: {'LAYERS':'show:2'}
 					})
 					}),				
